@@ -1,0 +1,95 @@
+2025-07-14 01:04:34,095 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:08:41,350 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:10:27,264 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:10:27,527 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:10:51,264 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:10:51,419 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:12:39,793 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:12:39,965 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:12:58,840 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:12:58,988 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:14:33,667 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:14:33,821 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:15:02,186 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:15:02,341 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:17:51,515 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:17:51,746 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:19:06,694 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:19:06,945 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:21:26,303 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:21:26,638 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:21:48,695 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:21:49,024 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:26:25,070 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:26:25,266 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:26:37,001 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýstanbul -> Ankara
+2025-07-14 01:26:37,151 [AnyIO worker thread] ERROR route-service - Hata oluþtu: REQUEST_DENIED
+2025-07-14 01:47:47,940 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ankara -> Ýzmir
+2025-07-14 01:47:48,092 [AnyIO worker thread] ERROR route-service - Rota hesaplama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-14 01:48:27,133 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ankara -> Ýzmir
+2025-07-14 01:48:27,477 [AnyIO worker thread] ERROR route-service - Rota hesaplama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-14 01:49:22,208 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ankara -> Ýzmir
+2025-07-14 01:49:22,353 [AnyIO worker thread] ERROR route-service - Rota hesaplama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-14 01:54:56,904 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ankara -> Ýzmir
+2025-07-14 01:55:38,042 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ankara -> Ýzmir
+2025-07-14 01:55:38,042 [AnyIO worker thread] ERROR route-service - Rota hesaplama hatasý: API key bulunamadý!
+2025-07-14 01:56:37,564 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ankara -> Ýzmir
+2025-07-14 02:00:50,900 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ankara -> Ýzmir
+2025-07-14 02:08:47,867 [AnyIO worker thread] INFO route-service - Rota isteði alýndý: Ýzmir -> Ankara
+2025-07-14 18:24:07,893 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-14 18:35:32,197 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-14 18:37:57,763 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-14 18:38:33,933 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-14 18:38:59,492 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Error 10061 connecting to localhost:6379. Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+2025-07-14 18:39:25,123 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Error 10061 connecting to localhost:6379. Hedef makine etkin olarak reddettiðinden baðlantý kurulamadý.
+2025-07-17 13:36:31,780 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:0cbea6ce-b070-4280-b58a-4854be34ba71
+2025-07-17 14:10:15,445 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:519ba7a4-fdb8-4e8e-b9c2-a2facf522ad7
+2025-07-17 18:48:53,828 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-17 18:55:39,883 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-17 18:55:48,327 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-17 18:55:53,714 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-17 18:55:57,537 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-17 18:56:02,327 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-17 18:56:29,982 [AnyIO worker thread] ERROR route-service - Rota planlama hatasý: Google Maps API hatasý: REQUEST_DENIED - You must use an API key to authenticate each request to Google Maps Platform APIs. For additional information, please refer to http://g.co/dev/maps-no-account
+2025-07-17 18:56:58,336 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:55ccce2b-0b95-4277-a0eb-9296fe4f4033
+2025-07-17 18:57:10,971 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:6695e1de-d09d-4747-8651-2ca64c37a849
+2025-07-17 19:03:02,265 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:03:03,088 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:9e9e18ad-5e20-415f-934b-7f3fcff9509d
+2025-07-17 19:17:05,626 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:17:06,408 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:c3a7cc20-4677-4ca0-af5f-8e3b91245090
+2025-07-17 19:17:11,460 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:17:12,112 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:0b094aac-5ace-42c5-918a-c18fef5e36a9
+2025-07-17 19:18:36,070 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:18:36,663 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:5df4217b-92e2-4da3-88c8-80744d14c03c
+2025-07-17 19:19:45,564 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:19:46,379 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:9ea405cb-08fb-4517-93f5-68f1ac4fd7c5
+2025-07-17 19:24:44,987 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:24:45,586 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:c0d30ebb-3357-41b7-bad6-79a03bdb76d4
+2025-07-17 19:26:16,602 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:26:17,314 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:f0b58903-e250-4f57-863f-2dffc915b4e9
+2025-07-17 19:26:40,848 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir
+2025-07-17 19:26:41,285 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:1f5af7dc-5846-46bd-ba60-e6f40efcaab3
+2025-07-17 19:34:05,657 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara
+2025-07-17 19:34:06,450 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:eb893fac-5caf-4563-a4e6-102695639cc5
+2025-07-17 19:34:42,302 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara
+2025-07-17 19:34:43,033 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:db5a3672-47d9-4f8f-8236-4834cbd71c65
+2025-07-17 19:53:52,005 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara | Waypoints: ['Konya']
+2025-07-17 19:53:52,535 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:2d1a273d-2bd8-4152-ac35-562bd4f11adc
+2025-07-17 19:54:29,047 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara | Waypoints: ['Konya', 'Antalya']
+2025-07-17 19:54:29,769 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:198fa498-0352-41f4-a6b5-6598e9125058
+2025-07-17 19:54:38,224 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara | Waypoints: ['Antalya', 'Konya']
+2025-07-17 19:54:38,909 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:a2d8d239-a3ea-418a-bfd3-a142df779dc5
+2025-07-17 19:55:07,871 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara | Waypoints: ['Antalya', 'Konya', 'Kemalpaþa']
+2025-07-17 19:55:08,620 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:da130b73-f828-476c-84f6-5d94418f1631
+2025-07-17 19:56:00,019 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara | Waypoints: ['Mehmet Akif Ersoy, 35730 Kemalpaþa/Ýzmir', 'Konya', 'Antalya']
+2025-07-17 19:56:00,602 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:4c98d51d-28df-43a3-8538-3d4ec8111b9b
+2025-07-17 20:04:28,397 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýzmir -> Ankara | Waypoints: ['Konya', 'Antalya', 'Mehmet Akif Ersoy, 35730 Kemalpaþa/Ýzmir']
+2025-07-17 20:04:29,076 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:e8f3a6ba-bf88-4e91-8f40-c0e09ba13edb
+2025-07-17 20:30:22,947 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ankara -> Ýzmir | Waypoints: ['Konya']
+2025-07-17 20:30:23,609 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:72821972-4b38-440d-9d17-9fad3618ef47
+2025-07-17 20:36:53,348 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýstanbul, Türkiye -> Ankara, Türkiye | Waypoints: []
+2025-07-17 20:36:54,163 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:7f7c5f6a-958a-4735-a575-51f8ab1fa84b
+2025-07-17 20:38:43,203 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýstanbul, Türkiye -> Ankara, Türkiye | Waypoints: []
+2025-07-17 20:38:43,914 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:db0973f8-0573-46b4-a664-5e9f208e854f
+2025-07-17 20:38:47,692 [AnyIO worker thread] INFO route-service - Yeni rota planlama: Ýstanbul, Türkiye -> Ankara, Türkiye | Waypoints: []
+2025-07-17 20:38:48,238 [AnyIO worker thread] INFO route-service - Rota kaydedildi: route:831e274c-29fb-42cf-a02e-c0324464ddcb
