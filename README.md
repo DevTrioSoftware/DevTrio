@@ -1,5 +1,14 @@
 # TransWiseAI
-
+# Bu dosya bilgilendirme amaçlıdır, npm install ile yüklenir!
+next
+react
+react-dom
+tailwindcss
+postcss
+autoprefixer
+lucide-react
+@headlessui/react
+shadcn-ui
 ## Kurulum ve Çalıştırma
 
 1. **Sanal Ortam Oluşturun (Önerilir):**

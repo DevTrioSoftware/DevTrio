@@ -1,4 +1,5 @@
 .env 
 doc1
-/TestPage
-
+.env.local
+.next
+node_modules
