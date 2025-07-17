@@ -3,4 +3,4 @@ doc1
 .env.local
 .next
 node_modules
-/logs
+logs
