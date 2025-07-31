@@ -43,3 +43,18 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# API Keys and sensitive configuration files
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+lib/config/api_keys.dart
+.env
+.env.local
+.env.production
+*.key
+*.pem
+
+# Local configuration files
+android/key.properties
+ios/Flutter/Release.xcconfig
+ios/Flutter/Debug.xcconfig
