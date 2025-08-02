@@ -13,6 +13,10 @@ class DriverProvider extends ChangeNotifier {
   List<RouteCard> _availableRoutes = [];
   List<DriverRoute> _activeRoutes = [];
   DriverRoute? _currentRoute;
+  List<CustomRouteCard> _customRoutes = [];
+  List<UserCreatedRoute> _userCreatedRoutes = [];
+  Set<String> _selectedCustomRouteIds = {};
+  bool _isSelectionMode = false;
 
   DriverApplication? get currentApplication => _currentApplication;
   bool get isLoading => _isLoading;
@@ -23,12 +27,26 @@ class DriverProvider extends ChangeNotifier {
   List<RouteCard> get availableRoutes => _availableRoutes;
   List<DriverRoute> get activeRoutes => _activeRoutes;
   DriverRoute? get currentRoute => _currentRoute;
+  List<CustomRouteCard> get customRoutes => _customRoutes;
+  List<UserCreatedRoute> get userCreatedRoutes => _userCreatedRoutes;
+  Set<String> get selectedCustomRouteIds => _selectedCustomRouteIds;
+  bool get isSelectionMode => _isSelectionMode;
 
   // Driver status
   bool get isApprovedDriver => _currentApplication?.status == 'approved';
 
   void clearError() {
     _errorMessage = null;
+    notifyListeners();
+  }
+
+  void setLoading(bool loading) {
+    _isLoading = loading;
+    notifyListeners();
+  }
+
+  void setError(String error) {
+    _errorMessage = error;
     notifyListeners();
   }
 
@@ -363,5 +381,158 @@ class DriverProvider extends ChangeNotifier {
       notifyListeners();
       return false;
     }
+  }
+
+  // Custom route management
+  void loadCustomRoutes() {
+    // In real app, load from local storage or API
+    // For now, start with empty list
+    _customRoutes = [];
+    notifyListeners();
+  }
+
+  void addCustomRoute(CustomRouteCard customRoute) {
+    _customRoutes.add(customRoute);
+    notifyListeners();
+  }
+
+  void deleteCustomRoute(String routeId) {
+    _customRoutes.removeWhere((route) => route.id == routeId);
+    notifyListeners();
+  }
+
+  void updateCustomRoute(CustomRouteCard updatedRoute) {
+    final index = _customRoutes.indexWhere(
+      (route) => route.id == updatedRoute.id,
+    );
+    if (index != -1) {
+      _customRoutes[index] = updatedRoute;
+      notifyListeners();
+    }
+  }
+
+  // Selection Management
+  void toggleSelectionMode() {
+    _isSelectionMode = !_isSelectionMode;
+    if (!_isSelectionMode) {
+      _selectedCustomRouteIds.clear();
+    }
+    notifyListeners();
+  }
+
+  void toggleCustomRouteSelection(String routeId) {
+    if (_selectedCustomRouteIds.contains(routeId)) {
+      _selectedCustomRouteIds.remove(routeId);
+    } else {
+      _selectedCustomRouteIds.add(routeId);
+    }
+    notifyListeners();
+  }
+
+  void clearSelection() {
+    _selectedCustomRouteIds.clear();
+    _isSelectionMode = false;
+    notifyListeners();
+  }
+
+  // User Created Route Management
+  void loadUserCreatedRoutes() async {
+    try {
+      setLoading(true);
+      // Simulated data for testing
+      _userCreatedRoutes = [
+        // Mock data will be replaced with real API calls
+      ];
+      notifyListeners();
+    } catch (e) {
+      setError('Kullanıcı rotaları yüklenirken hata oluştu: $e');
+    } finally {
+      setLoading(false);
+    }
+  }
+
+  void createRouteFromSelectedCards(
+    String title,
+    String description,
+    String? color,
+  ) {
+    if (_selectedCustomRouteIds.isEmpty) {
+      setError('Lütfen en az 2 nokta seçin');
+      return;
+    }
+
+    if (_selectedCustomRouteIds.length < 2) {
+      setError('Rota oluşturmak için en az 2 nokta seçmelisiniz');
+      return;
+    }
+
+    // Get selected cards in order
+    final selectedCards = _selectedCustomRouteIds
+        .map((id) => _customRoutes.firstWhere((card) => card.id == id))
+        .toList();
+
+    // Calculate distance and duration (simplified)
+    double totalDistance = _calculateTotalDistance(selectedCards);
+    int estimatedDuration = _calculateEstimatedDuration(totalDistance);
+
+    final newRoute = UserCreatedRoute(
+      id: DateTime.now().millisecondsSinceEpoch.toString(),
+      title: title,
+      description: description,
+      routePoints: selectedCards,
+      createdAt: DateTime.now(),
+      color: color,
+      totalDistance: totalDistance,
+      estimatedDuration: estimatedDuration,
+    );
+
+    _userCreatedRoutes.add(newRoute);
+    clearSelection();
+    notifyListeners();
+  }
+
+  void deleteUserCreatedRoute(String routeId) {
+    _userCreatedRoutes.removeWhere((route) => route.id == routeId);
+    notifyListeners();
+  }
+
+  double _calculateTotalDistance(List<CustomRouteCard> points) {
+    double totalDistance = 0.0;
+    for (int i = 0; i < points.length - 1; i++) {
+      final point1 = points[i];
+      final point2 = points[i + 1];
+      totalDistance += _calculateDistance(
+        point1.latitude,
+        point1.longitude,
+        point2.latitude,
+        point2.longitude,
+      );
+    }
+    return totalDistance;
+  }
+
+  double _calculateDistance(
+    double lat1,
+    double lon1,
+    double lat2,
+    double lon2,
+  ) {
+    // Haversine formula (simplified)
+    const double earthRadius = 6371; // km
+    double dLat = (lat2 - lat1) * (3.14159 / 180);
+    double dLon = (lon2 - lon1) * (3.14159 / 180);
+    double a =
+        (dLat / 2).abs() * (dLat / 2).abs() +
+        (lat1 * 3.14159 / 180).abs() *
+            (lat2 * 3.14159 / 180).abs() *
+            (dLon / 2).abs() *
+            (dLon / 2).abs();
+    double c = 2 * (a.abs()).abs();
+    return earthRadius * c;
+  }
+
+  int _calculateEstimatedDuration(double distanceKm) {
+    // Assume 50 km/h average speed
+    return (distanceKm * 60 / 50).round();
   }
 }

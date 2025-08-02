@@ -164,3 +164,103 @@ class DriverRoute {
     };
   }
 }
+
+class CustomRouteCard {
+  final String id;
+  final String title;
+  final String description;
+  final double latitude;
+  final double longitude;
+  final DateTime createdAt;
+  final String? color;
+  final String? category;
+
+  CustomRouteCard({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.latitude,
+    required this.longitude,
+    required this.createdAt,
+    this.color,
+    this.category,
+  });
+
+  factory CustomRouteCard.fromJson(Map<String, dynamic> json) {
+    return CustomRouteCard(
+      id: json['id'] ?? '',
+      title: json['title'] ?? '',
+      description: json['description'] ?? '',
+      latitude: (json['latitude'] ?? 0.0).toDouble(),
+      longitude: (json['longitude'] ?? 0.0).toDouble(),
+      createdAt: DateTime.parse(json['createdAt']),
+      color: json['color'],
+      category: json['category'],
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'latitude': latitude,
+      'longitude': longitude,
+      'createdAt': createdAt.toIso8601String(),
+      if (color != null) 'color': color,
+      if (category != null) 'category': category,
+    };
+  }
+}
+
+class UserCreatedRoute {
+  final String id;
+  final String title;
+  final String description;
+  final List<CustomRouteCard> routePoints;
+  final DateTime createdAt;
+  final String? color;
+  final double totalDistance; // km cinsinden
+  final int estimatedDuration; // dakika cinsinden
+
+  UserCreatedRoute({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.routePoints,
+    required this.createdAt,
+    this.color,
+    required this.totalDistance,
+    required this.estimatedDuration,
+  });
+
+  factory UserCreatedRoute.fromJson(Map<String, dynamic> json) {
+    return UserCreatedRoute(
+      id: json['id'] ?? '',
+      title: json['title'] ?? '',
+      description: json['description'] ?? '',
+      routePoints:
+          (json['routePoints'] as List<dynamic>?)
+              ?.map((point) => CustomRouteCard.fromJson(point))
+              .toList() ??
+          [],
+      createdAt: DateTime.parse(json['createdAt']),
+      color: json['color'],
+      totalDistance: (json['totalDistance'] ?? 0.0).toDouble(),
+      estimatedDuration: json['estimatedDuration'] ?? 0,
+    );
+  }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'routePoints': routePoints.map((point) => point.toJson()).toList(),
+      'createdAt': createdAt.toIso8601String(),
+      if (color != null) 'color': color,
+      'totalDistance': totalDistance,
+      'estimatedDuration': estimatedDuration,
+    };
+  }
+}

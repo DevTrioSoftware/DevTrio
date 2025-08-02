@@ -8,6 +8,7 @@ import '../../features/tracking/screens/tracking_screen.dart';
 import '../../features/driver/screens/driver_application_screen.dart';
 import '../../features/driver/screens/driver_application_success_screen.dart';
 import '../../features/driver/screens/driver_tracking_screen.dart';
+import '../../features/driver/screens/driver_map_screen.dart';
 import '../../features/admin/screens/admin_dashboard_screen.dart';
 import '../../features/admin/screens/driver_applications_management_screen.dart';
 import '../../features/profile/screens/profile_screen.dart';
@@ -46,6 +47,10 @@ class AppRouter {
       GoRoute(
         path: '/driver/tracking',
         builder: (context, state) => const DriverTrackingScreen(),
+      ),
+      GoRoute(
+        path: '/driver/map',
+        builder: (context, state) => const DriverMapScreen(),
       ),
       GoRoute(
         path: '/admin/dashboard',
