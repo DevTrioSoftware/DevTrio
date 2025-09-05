@@ -1,14 +1,14 @@
-2025-08-24 14:29:52 [main] INFO  c.e.logservice.LogServiceApplication - Starting LogServiceApplication using Java 17.0.16 with PID 12232 (C:\Users\ymanb\OneDrive\Desktop\Projects\DevTrio\LogService\build\classes\java\main started by ymanb in C:\Users\ymanb\OneDrive\Desktop\Projects\DevTrio\LogService)
-2025-08-24 14:29:52 [main] INFO  c.e.logservice.LogServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-24 14:29:53 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-24 14:29:53 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2025-08-24 14:29:53 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-24 14:29:53 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-24 14:29:53 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-24 14:29:53 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 857 ms
-2025-08-24 14:29:54 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2025-08-24 14:29:54 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-24 14:29:54 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
+2025-09-05 16:42:28 [main] INFO  c.e.logservice.LogServiceApplication - Starting LogServiceApplication using Java 17.0.16 with PID 17956 (C:\Users\ymanb\OneDrive\Desktop\Projects\DevTrio\LogService\build\classes\java\main started by ymanb in C:\Users\ymanb\OneDrive\Desktop\Projects\DevTrio\LogService)
+2025-09-05 16:42:28 [main] INFO  c.e.logservice.LogServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-09-05 16:42:29 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-09-05 16:42:29 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2025-09-05 16:42:29 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-09-05 16:42:29 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-09-05 16:42:29 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-09-05 16:42:29 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 945 ms
+2025-09-05 16:42:30 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2025-09-05 16:42:30 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-09-05 16:42:30 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
 	allow.auto.create.topics = true
 	auto.commit.interval.ms = 5000
 	auto.include.jmx.reporter = true
@@ -108,194 +108,37 @@
 	ssl.truststore.type = JKS
 	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
 
-2025-08-24 14:29:54 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
-2025-08-24 14:29:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-08-24 14:29:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-08-24 14:29:54 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1756034994391
-2025-08-24 14:29:54 [main] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-log-service-1, groupId=log-service] Subscribed to topic(s): log-topic
-2025-08-24 14:29:54 [main] INFO  c.e.logservice.LogServiceApplication - Started LogServiceApplication in 1.947 seconds (process running for 2.357)
-2025-08-24 14:29:54 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-log-service-1, groupId=log-service] Cluster ID: I1TpFO5GTtqrsIcMcjst0g
-2025-08-24 14:29:54 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
-2025-08-24 14:29:54 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] (Re-)joining group
-2025-08-24 14:29:54 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: need to re-join with the given member-id: consumer-log-service-1-556ad552-1f93-4382-b641-c25e1acde62f
-2025-08-24 14:29:54 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] (Re-)joining group
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Successfully joined group with generation Generation{generationId=3, memberId='consumer-log-service-1-556ad552-1f93-4382-b641-c25e1acde62f', protocol='range'}
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Finished assignment for group at generation 3: {consumer-log-service-1-556ad552-1f93-4382-b641-c25e1acde62f=Assignment(partitions=[log-topic-0])}
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Successfully synced group in generation Generation{generationId=3, memberId='consumer-log-service-1-556ad552-1f93-4382-b641-c25e1acde62f', protocol='range'}
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Notifying assignor about the new Assignment(partitions=[log-topic-0])
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-log-service-1, groupId=log-service] Adding newly assigned partitions: log-topic-0
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Found no committed offset for partition log-topic-0
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.SubscriptionState - [Consumer clientId=consumer-log-service-1, groupId=log-service] Resetting offset for partition log-topic-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}.
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: partitions assigned: [log-topic-0]
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - ℹ️ INFO: register
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - ℹ️ INFO: saveUserMethod
-2025-08-24 14:29:57 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - ℹ️ INFO: login
-2025-08-24 14:30:01 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - ℹ️ INFO: login
-2025-08-24 16:12:15 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - ℹ️ INFO: saveUserMethod
-2025-08-24 16:12:53 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - ℹ️ INFO: login
-2025-08-24 16:15:15 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - ℹ️ INFO: login
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-log-service-1, groupId=log-service] Revoke previously assigned partitions log-topic-0
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: partitions revoked: [log-topic-0]
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Member consumer-log-service-1-556ad552-1f93-4382-b641-c25e1acde62f sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: consumer pro-actively leaving the group
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-log-service-1, groupId=log-service] Unsubscribed all topics or patterns and assigned partitions
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-08-24 16:21:23 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: consumer pro-actively leaving the group
-2025-08-24 16:21:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-08-24 16:21:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-08-24 16:21:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-08-24 16:21:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-08-24 16:21:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-log-service-1 unregistered
-2025-08-24 16:21:24 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: Consumer stopped
-2025-08-24 16:21:24 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-24 16:21:24 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
-2025-08-24 16:21:27 [main] INFO  c.e.logservice.LogServiceApplication - Starting LogServiceApplication using Java 17.0.16 with PID 8156 (C:\Users\ymanb\OneDrive\Desktop\Projects\DevTrio\LogService\build\classes\java\main started by ymanb in C:\Users\ymanb\OneDrive\Desktop\Projects\DevTrio\LogService)
-2025-08-24 16:21:27 [main] INFO  c.e.logservice.LogServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2025-08-24 16:21:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
-2025-08-24 16:21:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2025-08-24 16:21:28 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-08-24 16:21:28 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.43]
-2025-08-24 16:21:28 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2025-08-24 16:21:28 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 786 ms
-2025-08-24 16:21:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2025-08-24 16:21:28 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
-2025-08-24 16:21:28 [main] INFO  o.a.k.c.consumer.ConsumerConfig - ConsumerConfig values: 
-	allow.auto.create.topics = true
-	auto.commit.interval.ms = 5000
-	auto.include.jmx.reporter = true
-	auto.offset.reset = earliest
-	bootstrap.servers = [localhost:9092]
-	check.crcs = true
-	client.dns.lookup = use_all_dns_ips
-	client.id = consumer-log-service-1
-	client.rack = 
-	connections.max.idle.ms = 540000
-	default.api.timeout.ms = 60000
-	enable.auto.commit = false
-	enable.metrics.push = true
-	exclude.internal.topics = true
-	fetch.max.bytes = 52428800
-	fetch.max.wait.ms = 500
-	fetch.min.bytes = 1
-	group.id = log-service
-	group.instance.id = null
-	group.protocol = classic
-	group.remote.assignor = null
-	heartbeat.interval.ms = 3000
-	interceptor.classes = []
-	internal.leave.group.on.close = true
-	internal.throw.on.fetch.stable.offset.unsupported = false
-	isolation.level = read_uncommitted
-	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-	max.partition.fetch.bytes = 1048576
-	max.poll.interval.ms = 300000
-	max.poll.records = 500
-	metadata.max.age.ms = 300000
-	metadata.recovery.strategy = none
-	metric.reporters = []
-	metrics.num.samples = 2
-	metrics.recording.level = INFO
-	metrics.sample.window.ms = 30000
-	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
-	receive.buffer.bytes = 65536
-	reconnect.backoff.max.ms = 1000
-	reconnect.backoff.ms = 50
-	request.timeout.ms = 30000
-	retry.backoff.max.ms = 1000
-	retry.backoff.ms = 100
-	sasl.client.callback.handler.class = null
-	sasl.jaas.config = null
-	sasl.kerberos.kinit.cmd = /usr/bin/kinit
-	sasl.kerberos.min.time.before.relogin = 60000
-	sasl.kerberos.service.name = null
-	sasl.kerberos.ticket.renew.jitter = 0.05
-	sasl.kerberos.ticket.renew.window.factor = 0.8
-	sasl.login.callback.handler.class = null
-	sasl.login.class = null
-	sasl.login.connect.timeout.ms = null
-	sasl.login.read.timeout.ms = null
-	sasl.login.refresh.buffer.seconds = 300
-	sasl.login.refresh.min.period.seconds = 60
-	sasl.login.refresh.window.factor = 0.8
-	sasl.login.refresh.window.jitter = 0.05
-	sasl.login.retry.backoff.max.ms = 10000
-	sasl.login.retry.backoff.ms = 100
-	sasl.mechanism = GSSAPI
-	sasl.oauthbearer.clock.skew.seconds = 30
-	sasl.oauthbearer.expected.audience = null
-	sasl.oauthbearer.expected.issuer = null
-	sasl.oauthbearer.header.urlencode = false
-	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
-	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
-	sasl.oauthbearer.jwks.endpoint.url = null
-	sasl.oauthbearer.scope.claim.name = scope
-	sasl.oauthbearer.sub.claim.name = sub
-	sasl.oauthbearer.token.endpoint.url = null
-	security.protocol = PLAINTEXT
-	security.providers = null
-	send.buffer.bytes = 131072
-	session.timeout.ms = 45000
-	socket.connection.setup.timeout.max.ms = 30000
-	socket.connection.setup.timeout.ms = 10000
-	ssl.cipher.suites = null
-	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
-	ssl.endpoint.identification.algorithm = https
-	ssl.engine.factory.class = null
-	ssl.key.password = null
-	ssl.keymanager.algorithm = SunX509
-	ssl.keystore.certificate.chain = null
-	ssl.keystore.key = null
-	ssl.keystore.location = null
-	ssl.keystore.password = null
-	ssl.keystore.type = JKS
-	ssl.protocol = TLSv1.3
-	ssl.provider = null
-	ssl.secure.random.implementation = null
-	ssl.trustmanager.algorithm = PKIX
-	ssl.truststore.certificates = null
-	ssl.truststore.location = null
-	ssl.truststore.password = null
-	ssl.truststore.type = JKS
-	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
-
-2025-08-24 16:21:28 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
-2025-08-24 16:21:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
-2025-08-24 16:21:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
-2025-08-24 16:21:29 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1756041689020
-2025-08-24 16:21:29 [main] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-log-service-1, groupId=log-service] Subscribed to topic(s): log-topic
-2025-08-24 16:21:29 [main] INFO  c.e.logservice.LogServiceApplication - Started LogServiceApplication in 1.965 seconds (process running for 2.409)
-2025-08-24 16:21:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-log-service-1, groupId=log-service] Cluster ID: I1TpFO5GTtqrsIcMcjst0g
-2025-08-24 16:21:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
-2025-08-24 16:21:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] (Re-)joining group
-2025-08-24 16:21:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: need to re-join with the given member-id: consumer-log-service-1-66d6a575-cc98-4836-a3c2-1ca4a893d1c2
-2025-08-24 16:21:29 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] (Re-)joining group
-2025-08-24 16:21:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Successfully joined group with generation Generation{generationId=5, memberId='consumer-log-service-1-66d6a575-cc98-4836-a3c2-1ca4a893d1c2', protocol='range'}
-2025-08-24 16:21:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Finished assignment for group at generation 5: {consumer-log-service-1-66d6a575-cc98-4836-a3c2-1ca4a893d1c2=Assignment(partitions=[log-topic-0])}
-2025-08-24 16:21:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Successfully synced group in generation Generation{generationId=5, memberId='consumer-log-service-1-66d6a575-cc98-4836-a3c2-1ca4a893d1c2', protocol='range'}
-2025-08-24 16:21:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Notifying assignor about the new Assignment(partitions=[log-topic-0])
-2025-08-24 16:21:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-log-service-1, groupId=log-service] Adding newly assigned partitions: log-topic-0
-2025-08-24 16:21:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition log-topic-0 to the committed offset FetchPosition{offset=7, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
-2025-08-24 16:21:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: partitions assigned: [log-topic-0]
-2025-08-24 16:21:44 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - 2025-08-24T13:21:44.280331600Z | INFO | Successfully logged in: 541dca9a-fd33-4354-9615-b81128af07f9 | login
-2025-08-24 17:19:03 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - 2025-08-24T14:19:03.374265300Z | INFO | Successfully logged in: 541dca9a-fd33-4354-9615-b81128af07f9 | login
-2025-08-24 17:25:20 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - 2025-08-24T14:25:20.279450Z | INFO | Successfully logged in: 3a09447a-0695-4a0a-9bd1-886410996e57 | login
-2025-08-24 17:25:32 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - 2025-08-24T14:25:32.484398Z | INFO | Driver request send to admin | DriverService
-2025-08-24 17:26:05 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  c.e.logservice.Consumer.LogConsumer - 2025-08-24T14:26:05.617022Z | INFO | Driver request send to admin | DriverService
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-log-service-1, groupId=log-service] Revoke previously assigned partitions log-topic-0
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: partitions revoked: [log-topic-0]
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Member consumer-log-service-1-66d6a575-cc98-4836-a3c2-1ca4a893d1c2 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: consumer pro-actively leaving the group
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-log-service-1, groupId=log-service] Unsubscribed all topics or patterns and assigned partitions
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Resetting generation and member id due to: consumer pro-actively leaving the group
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: consumer pro-actively leaving the group
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-log-service-1 unregistered
-2025-08-24 17:42:43 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: Consumer stopped
-2025-08-24 17:42:43 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2025-08-24 17:42:43 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-09-05 16:42:30 [main] INFO  o.a.k.c.t.i.KafkaMetricsCollector - initializing Kafka metrics collector
+2025-09-05 16:42:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka version: 3.9.1
+2025-09-05 16:42:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka commitId: f745dfdcee2b9851
+2025-09-05 16:42:30 [main] INFO  o.a.kafka.common.utils.AppInfoParser - Kafka startTimeMs: 1757079750363
+2025-09-05 16:42:30 [main] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-log-service-1, groupId=log-service] Subscribed to topic(s): log-topic
+2025-09-05 16:42:30 [main] INFO  c.e.logservice.LogServiceApplication - Started LogServiceApplication in 2.284 seconds (process running for 3.1)
+2025-09-05 16:42:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  org.apache.kafka.clients.Metadata - [Consumer clientId=consumer-log-service-1, groupId=log-service] Cluster ID: I1TpFO5GTtqrsIcMcjst0g
+2025-09-05 16:42:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null)
+2025-09-05 16:42:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] (Re-)joining group
+2025-09-05 16:42:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: need to re-join with the given member-id: consumer-log-service-1-6fa3282b-4cb2-4847-9671-024961ad9854
+2025-09-05 16:42:30 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] (Re-)joining group
+2025-09-05 16:42:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Successfully joined group with generation Generation{generationId=7, memberId='consumer-log-service-1-6fa3282b-4cb2-4847-9671-024961ad9854', protocol='range'}
+2025-09-05 16:42:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Finished assignment for group at generation 7: {consumer-log-service-1-6fa3282b-4cb2-4847-9671-024961ad9854=Assignment(partitions=[log-topic-0])}
+2025-09-05 16:42:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Successfully synced group in generation Generation{generationId=7, memberId='consumer-log-service-1-6fa3282b-4cb2-4847-9671-024961ad9854', protocol='range'}
+2025-09-05 16:42:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Notifying assignor about the new Assignment(partitions=[log-topic-0])
+2025-09-05 16:42:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-log-service-1, groupId=log-service] Adding newly assigned partitions: log-topic-0
+2025-09-05 16:42:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.internals.ConsumerUtils - Setting offset for partition log-topic-0 to the committed offset FetchPosition{offset=12, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}}
+2025-09-05 16:42:33 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: partitions assigned: [log-topic-0]
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerRebalanceListenerInvoker - [Consumer clientId=consumer-log-service-1, groupId=log-service] Revoke previously assigned partitions log-topic-0
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: partitions revoked: [log-topic-0]
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Member consumer-log-service-1-6fa3282b-4cb2-4847-9671-024961ad9854 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer unsubscribed from all topics
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: consumer pro-actively leaving the group
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ClassicKafkaConsumer - [Consumer clientId=consumer-log-service-1, groupId=log-service] Unsubscribed all topics or patterns and assigned partitions
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Resetting generation and member id due to: consumer pro-actively leaving the group
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.k.c.c.i.ConsumerCoordinator - [Consumer clientId=consumer-log-service-1, groupId=log-service] Request joining group due to: consumer pro-actively leaving the group
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics scheduler closed
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.metrics.Metrics - Metrics reporters closed
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.a.kafka.common.utils.AppInfoParser - App info kafka.consumer for consumer-log-service-1 unregistered
+2025-09-05 18:06:27 [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] INFO  o.s.k.l.KafkaMessageListenerContainer - log-service: Consumer stopped
+2025-09-05 18:06:27 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-05 18:06:27 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete

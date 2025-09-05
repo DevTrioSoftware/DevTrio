@@ -26,8 +26,8 @@ public class UserController {
     }
 
     @GetMapping("/mail")
-    public ResponseEntity<Response<Optional<UserResponseDto>>> GetUserByEmail(@RequestParam String email) {
-        Response<Optional<UserResponseDto>> response = userService.GetUserByEmail(email);
+    public ResponseEntity<Response<UserResponseDto>> GetUserByEmail(@RequestParam String email) {
+        Response<UserResponseDto> response = userService.GetUserByEmail(email);
         return ResponseEntity.ok(response);
     }
 }

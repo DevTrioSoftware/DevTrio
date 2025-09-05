@@ -8,8 +8,7 @@ import com.example.userservice.Model.UserModel;
 import java.util.Optional;
 
 public interface UserService {
-    Response<Optional<UserResponseDto>> GetUserByEmail(String email);
-    boolean existsByEmail(String email);
+    Response<UserResponseDto> GetUserByEmail(String email);
     Optional<UserModel> findUserByEmail(String email);
 
 }

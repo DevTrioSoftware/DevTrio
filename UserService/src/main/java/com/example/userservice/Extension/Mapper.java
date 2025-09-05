@@ -1,7 +1,6 @@
 package com.example.userservice.Extension;
 
 import com.example.userservice.Dto.DriverRequestDto;
-import com.example.userservice.Dto.UserRegisterDto;
 import com.example.userservice.Dto.UserResponseDto;
 import com.example.userservice.Model.DriverRequest;
 import com.example.userservice.Model.UserModel;
@@ -19,16 +18,7 @@ public class Mapper {
         userResponseDto.setRole(userModel.getRole());
         return userResponseDto;
     }
-
-    public UserModel toUserModel(UserRegisterDto dto) {
-        UserModel userModel = new UserModel();
-        userModel.setEmail(dto.getEmail());
-        userModel.setName(dto.getName());
-        userModel.setSurname(dto.getSurname());
-        userModel.setRole(dto.getRole());
-        userModel.setPassword(dto.getPassword());
-        return userModel;
-    }
+    
 
     public DriverRequest toDriverRequest(DriverRequestDto dto) {
         DriverRequest driverRequest = new DriverRequest();

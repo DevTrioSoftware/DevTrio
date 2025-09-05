@@ -8,8 +8,6 @@ import com.example.userservice.Extension.StatusCode;
 import com.example.userservice.Model.UserModel;
 import com.example.userservice.Repository.UserRepository;
 import com.example.userservice.Service.Interface.UserService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
@@ -28,27 +26,21 @@ public class UserImplementation implements UserService {
     }
 
     @Override
-    public Response<Optional<UserResponseDto>> GetUserByEmail(String email) {
+    public Response<UserResponseDto> GetUserByEmail(String email) {
         if (email == null) {
             return Response.fail("Email cannot be null", StatusCode.BAD_REQUEST);
         }
         if (email.isEmpty()) {
             return Response.fail("Email cannot be empty", StatusCode.BAD_REQUEST);
         }
-        Optional<UserModel> user = userRepository.findByEmail(email);
-        if (user.isEmpty()) {
-            throw  new UserNotFoundException("User not found", StatusCode.NOT_FOUND);
-        }
+        UserModel user = userRepository.findByEmail(email).orElseThrow(()-> new UserNotFoundException("Kullanıcı bulunamadı",StatusCode.NOT_FOUND));
 
-        UserResponseDto response=mapper.toUserResponseDto(user.get());
-        return Response.success(Optional.of(response),"User with email "+ email +" found",StatusCode.SUCCESS);
+
+        UserResponseDto response=mapper.toUserResponseDto(user);
+        return Response.success(response,"User with email "+ email +" found",StatusCode.SUCCESS);
     }
 
-    @Override
-    public boolean existsByEmail(String email) {
-        return userRepository.existsByEmail(email);
-    }
-
+    public Response<UserResponseDto> GetUserByUsername(String username) {}
     @Override
     public Optional<UserModel> findUserByEmail(String email) {
         return userRepository.findByEmail(email);
